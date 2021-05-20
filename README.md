@@ -17,8 +17,7 @@ Small extension for logging all documents as they are submitted to solr. Please 
   </updateRequestProcessorChain> 
 ```
 
-3)
-Update log4j2.xml to log the updated docs to a seperated appender
+3) Optional: Update log4j2.xml to log the updated docs to a seperated appender
 ```    
 <AsyncLogger name="com.github.zitcomdev.solr.logupdateddocuments.LogUpdatedDocumentsProcessorFactory" level="all" additivity="false"> 
   <AppenderRef ref="UpdateLogFile"/>
